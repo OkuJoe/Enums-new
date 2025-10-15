@@ -1,0 +1,65 @@
+/*
+#include <iostream>
+using namespace std;
+ 
+enum Level {
+  LOW = 25,
+  MEDIUM = 50,
+  HIGH = 75
+}; 
+
+int main() {
+  enum Level myVar = MEDIUM;
+  cout << myVar;
+  return 0;
+}
+  */
+ /*
+  #include <iostream>
+using namespace std;
+ 
+enum Level { 
+  LOW,
+  MEDIUM,
+  HIGH
+}; 
+
+int main() {
+  enum Level myVar = MEDIUM;
+  cout << myVar;
+  return 0;
+
+
+} */
+
+//USING ENUMS IN SWITCH STATEMENTS
+#include <iostream>
+using namespace std;
+ 
+enum Level {
+  LOW = 1,
+  MEDIUM,
+  HIGH
+};
+
+int main() {
+  enum Level myVar = MEDIUM;
+
+  switch (myVar) {
+    case 1:
+      cout << "Low Level";
+      break;
+    case 2:
+      cout << "Medium level";
+      break;
+    case 3:
+      cout << "High level";
+      break;
+
+default:
+cout << " none of above";
+break;
+  }
+  return 0;
+}
+ 
